@@ -14,6 +14,7 @@
 		9CD5DFF01F8A6A98009D30C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5DFEE1F8A6A98009D30C0 /* LaunchScreen.storyboard */; };
 		9CD5DFFB1F8A6A99009D30C0 /* SuperPrutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFFA1F8A6A99009D30C0 /* SuperPrutterTests.swift */; };
 		9CD5E0061F8A6A99009D30C0 /* SuperPrutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5E0051F8A6A99009D30C0 /* SuperPrutterUITests.swift */; };
+		9CFA948D1F8A854C00E33310 /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA948C1F8A854800E33310 /* fart.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		9CD5E0011F8A6A99009D30C0 /* SuperPrutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPrutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD5E0051F8A6A99009D30C0 /* SuperPrutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPrutterUITests.swift; sourceTree = "<group>"; };
 		9CD5E0071F8A6A99009D30C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CD5E01C1F8A7F6B009D30C0 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		9CFA948C1F8A854800E33310 /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */,
-				9CD5E01C1F8A7F6B009D30C0 /* btn.wav */,
 				9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */,
 				9CD5DFE91F8A6A98009D30C0 /* Main.storyboard */,
 				9CD5DFEC1F8A6A98009D30C0 /* Assets.xcassets */,
 				9CD5DFEE1F8A6A98009D30C0 /* LaunchScreen.storyboard */,
+				9CFA948C1F8A854800E33310 /* fart.wav */,
 				9CD5DFF11F8A6A98009D30C0 /* Info.plist */,
 			);
 			path = SuperPrutter;
@@ -234,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFA948D1F8A854C00E33310 /* fart.wav in Resources */,
 				9CD5DFF01F8A6A98009D30C0 /* LaunchScreen.storyboard in Resources */,
 				9CD5DFED1F8A6A98009D30C0 /* Assets.xcassets in Resources */,
 				9CD5DFEB1F8A6A98009D30C0 /* Main.storyboard in Resources */,

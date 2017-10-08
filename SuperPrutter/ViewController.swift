@@ -43,16 +43,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //MARK:- PLAY SOUND
     func playSound() {
-        let url = Bundle.main.url(forResource: "btn", withExtension: "wav")!
+        guard let url = Bundle.main.url(forResource: "fart", withExtension: "wav") else { return }
         
         do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
             
-            player.prepareToPlay()
             player.play()
-        } catch let error as NSError {
-            print(error.description)
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
     
