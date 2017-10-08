@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27C6A5451F8A9ABD00F5945A /* PrutLyde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A5441F8A9ABD00F5945A /* PrutLyde.swift */; };
+		27C6A5481F8A9D0000F5945A /* fartt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C6A5471F8A9CF400F5945A /* fartt.wav */; };
 		9CD5DFE61F8A6A98009D30C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */; };
 		9CD5DFE81F8A6A98009D30C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */; };
 		9CD5DFEB1F8A6A98009D30C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE91F8A6A98009D30C0 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27C6A5441F8A9ABD00F5945A /* PrutLyde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrutLyde.swift; sourceTree = "<group>"; };
+		27C6A5471F8A9CF400F5945A /* fartt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fartt.wav; sourceTree = "<group>"; };
 		9CD5DFE21F8A6A98009D30C0 /* SuperPrutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPrutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27C6A5461F8A9CC500F5945A /* Prutterne */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA948C1F8A854800E33310 /* fart.wav */,
+				27C6A5471F8A9CF400F5945A /* fartt.wav */,
+			);
+			path = Prutterne;
+			sourceTree = "<group>";
+		};
 		9CD5DFD91F8A6A98009D30C0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +114,11 @@
 			children = (
 				9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */,
 				9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */,
+				27C6A5441F8A9ABD00F5945A /* PrutLyde.swift */,
 				9CD5DFE91F8A6A98009D30C0 /* Main.storyboard */,
 				9CD5DFEC1F8A6A98009D30C0 /* Assets.xcassets */,
 				9CD5DFEE1F8A6A98009D30C0 /* LaunchScreen.storyboard */,
-				9CFA948C1F8A854800E33310 /* fart.wav */,
+				27C6A5461F8A9CC500F5945A /* Prutterne */,
 				9CD5DFF11F8A6A98009D30C0 /* Info.plist */,
 			);
 			path = SuperPrutter;
@@ -235,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C6A5481F8A9D0000F5945A /* fartt.wav in Resources */,
 				9CFA948D1F8A854C00E33310 /* fart.wav in Resources */,
 				9CD5DFF01F8A6A98009D30C0 /* LaunchScreen.storyboard in Resources */,
 				9CD5DFED1F8A6A98009D30C0 /* Assets.xcassets in Resources */,
@@ -264,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD5DFE81F8A6A98009D30C0 /* ViewController.swift in Sources */,
+				27C6A5451F8A9ABD00F5945A /* PrutLyde.swift in Sources */,
 				9CD5DFE61F8A6A98009D30C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

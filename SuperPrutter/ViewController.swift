@@ -11,7 +11,9 @@ import AVFoundation
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    let prutter = ["prut1", "prut2"]
+    let prutter = [fart1,fart2]
+    
+    var selectedFart: Fart = fart1
     
     @IBOutlet weak var prutteKnap: UIButton!
     @IBOutlet weak var pruttePicker: UIPickerView!
@@ -23,6 +25,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
  /*
     // Prutter Sound Player
         let path = Bundle.main.url(forResource: "fart", withExtension: "wav")
@@ -43,13 +46,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //MARK:- PLAY SOUND
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "fart", withExtension: "wav") else { return }
         
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             
-            player = try AVAudioPlayer(contentsOf: url)
+            player = try AVAudioPlayer(contentsOf: selectedFart.sound)
             guard let player = player else { return }
             
             player.play()
@@ -67,11 +69,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return prutter[row]
+        return prutter[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        prutteLabel.text = prutter[row]
+        prutteLabel.text = prutter[row].name
+        selectedFart = prutter[row]
     }
 
     @IBAction func prutteKnapTrykket(_ sender: Any) {
