@@ -47,6 +47,13 @@
 		9CD5E0011F8A6A99009D30C0 /* SuperPrutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPrutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD5E0051F8A6A99009D30C0 /* SuperPrutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPrutterUITests.swift; sourceTree = "<group>"; };
 		9CD5E0071F8A6A99009D30C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD5E0141F8A7422009D30C0 /* fart-03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "fart-03.mp3"; path = "../../../../Downloads/fart-03.mp3"; sourceTree = "<group>"; };
+		9CD5E0151F8A7422009D30C0 /* fart-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "fart-01.mp3"; path = "../../../../Downloads/fart-01.mp3"; sourceTree = "<group>"; };
+		9CD5E0161F8A7422009D30C0 /* fart-02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "fart-02.mp3"; path = "../../../../Downloads/fart-02.mp3"; sourceTree = "<group>"; };
+		9CD5E0171F8A7865009D30C0 /* fart-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "fart-01.mp3"; path = "../../../Downloads/fart-01.mp3"; sourceTree = "<group>"; };
+		9CD5E0181F8A789A009D30C0 /* fart-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fart-01.wav"; sourceTree = "<group>"; };
+		9CD5E0191F8A7B15009D30C0 /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
+		9CD5E01A1F8A7C87009D30C0 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,11 @@
 		9CD5DFE41F8A6A98009D30C0 /* SuperPrutter */ = {
 			isa = PBXGroup;
 			children = (
+				9CD5E0181F8A789A009D30C0 /* fart-01.wav */,
+				9CD5E0191F8A7B15009D30C0 /* fart.wav */,
+				9CD5E0171F8A7865009D30C0 /* fart-01.mp3 */,
+				9CD5E01A1F8A7C87009D30C0 /* btn.wav */,
+				9CD5E0131F8A7404009D30C0 /* Prutte Lyde */,
 				9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */,
 				9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */,
 				9CD5DFE91F8A6A98009D30C0 /* Main.storyboard */,
@@ -123,6 +135,16 @@
 				9CD5E0071F8A6A99009D30C0 /* Info.plist */,
 			);
 			path = SuperPrutterUITests;
+			sourceTree = "<group>";
+		};
+		9CD5E0131F8A7404009D30C0 /* Prutte Lyde */ = {
+			isa = PBXGroup;
+			children = (
+				9CD5E0151F8A7422009D30C0 /* fart-01.mp3 */,
+				9CD5E0161F8A7422009D30C0 /* fart-02.mp3 */,
+				9CD5E0141F8A7422009D30C0 /* fart-03.mp3 */,
+			);
+			path = "Prutte Lyde";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

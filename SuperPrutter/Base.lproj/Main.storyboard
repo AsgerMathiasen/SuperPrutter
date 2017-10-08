@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperPrutter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d11-Ql-GeN">
+                                <rect key="frame" x="110" y="70" width="155" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="Pp7-ao-FZh"/>
+                                    <constraint firstAttribute="height" constant="155" id="k3U-Ro-gcb"/>
+                                </constraints>
+                                <state key="normal" image="Knap"/>
+                                <connections>
+                                    <action selector="prutteKnapTrykket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecA-UJ-hrB"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQh-0M-eRY">
+                                <rect key="frame" x="0.0" y="331" width="375" height="336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="336" id="r6h-mO-QSw"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khb-zX-S0q">
+                                <rect key="frame" x="20" y="235" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5Av-R4-a4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="khb-zX-S0q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2fa-Zu-Gm8"/>
+                            <constraint firstItem="hQh-0M-eRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BLD-MY-kC4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="khb-zX-S0q" secondAttribute="trailing" constant="20" id="Mmv-8g-XIc"/>
+                            <constraint firstItem="d11-Ql-GeN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Qqx-2b-f7u"/>
+                            <constraint firstItem="khb-zX-S0q" firstAttribute="top" secondItem="d11-Ql-GeN" secondAttribute="bottom" constant="10" id="VaM-Wk-1MY"/>
+                            <constraint firstItem="hQh-0M-eRY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YKk-Ew-n4N"/>
+                            <constraint firstItem="hQh-0M-eRY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bew-AJ-dcQ"/>
+                            <constraint firstItem="d11-Ql-GeN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iA4-00-ptk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="prutteKnap" destination="d11-Ql-GeN" id="2UB-nc-qHE"/>
+                        <outlet property="prutteLabel" destination="khb-zX-S0q" id="kKV-Yh-VMy"/>
+                        <outlet property="pruttePicker" destination="hQh-0M-eRY" id="Y4C-w4-t87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Knap" width="155" height="155"/>
+    </resources>
 </document>
