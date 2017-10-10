@@ -68,9 +68,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell")
+        let currentFart = prutter[indexPath.row]
         
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell") as! TableViewCell
+        
+        cell.Emoji.text = currentFart.emoji
+        cell.navn.text = currentFart.name
+        cell.lugt.text = currentFart.smell
+        
+        
+        return cell
         
     }
     
