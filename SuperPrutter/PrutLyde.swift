@@ -11,16 +11,21 @@ import Foundation
 class Fart {
     let name: String
     let sound: URL
+    let smell: String
     
-    init(name: String, sound: URL) {
+    let emoji: String
+    
+    init(name: String, sound: URL, smell: String, emoji: String) {
         self.name = name
         self.sound = sound
+        self.smell = smell
+        self.emoji = emoji
     }
 }
 
 
-let fart1 = Fart(name: "prut1", sound: Bundle.main.url(forResource: "fart", withExtension: "wav")!)
-let fart2 = Fart(name: "prut2", sound: Bundle.main.url(forResource: "fartt", withExtension: "wav")!)
+let fart1 = Fart(name: "Peanutbutter & Jelly", sound: Bundle.main.url(forResource: "fart", withExtension: "wav")!, smell: "Nasty with some peanutbutter", emoji: "🥜")
+let fart2 = Fart(name: "A fart from heaven", sound: Bundle.main.url(forResource: "fartt", withExtension: "wav")!, smell: "i kind of wanna keep smelling this", emoji: "💨")
 
 
 

@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var prutteKnap: UIButton!
     
     let prutter = [fart1,fart2]
-    var selectedFart: Fart = fart1
+    var selectedFart: Fart = fart2
     
 
     
@@ -31,8 +31,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+<<<<<<< HEAD
         tableView.delegate = self
         tableView.dataSource = self
+=======
+        prutNavneLabel.text = selectedFart.name
+        PrutEmojiLabel.text = selectedFart.emoji
+        
+        
+>>>>>>> a26eeab9bbc5ad7cb92f334728782ff34c85a424
         
     }
     
