@@ -134,6 +134,9 @@
                         <outlet property="PrutEmojiLabel" destination="HFm-96-Ji1" id="1Rn-kr-5Zr"/>
                         <outlet property="prutNavneLabel" destination="F1Q-zP-b8s" id="0dQ-Wq-dEi"/>
                         <outlet property="prutteKnap" destination="0wf-6B-jkD" id="2lq-BK-dVJ"/>
+                        <outlet property="prutteTableLugt" destination="xWe-Gx-isy" id="ByI-uE-ZA5"/>
+                        <outlet property="prutteTableNavn" destination="OUh-9C-8Ty" id="JZn-c3-egJ"/>
+                        <outlet property="tableEmoji" destination="V7A-77-B2M" id="vur-VD-srP"/>
                         <outlet property="tableView" destination="lvD-0D-2BG" id="AgL-VB-XAt"/>
                     </connections>
                 </viewController>

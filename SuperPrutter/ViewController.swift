@@ -19,6 +19,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var PrutEmojiLabel: UILabel!
     @IBOutlet weak var prutteKnap: UIButton!
     
+    @IBOutlet weak var prutteTableNavn: UILabel!
+    @IBOutlet weak var prutteTableLugt: UILabel!
+    @IBOutlet weak var tableEmoji: UILabel!
+    
     let prutter = [fart1,fart2]
     var selectedFart: Fart = fart2
     
@@ -59,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return prutter.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,6 +71,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell")
         
         return cell!
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedFart = prutter[indexPath.row]
+        
+        prutNavneLabel.text = selectedFart.name
+        PrutEmojiLabel.text = selectedFart.emoji
+        
     }
     
     
