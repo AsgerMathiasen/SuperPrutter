@@ -31,15 +31,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
         tableView.delegate = self
         tableView.dataSource = self
-=======
         prutNavneLabel.text = selectedFart.name
         PrutEmojiLabel.text = selectedFart.emoji
-        
-        
->>>>>>> a26eeab9bbc5ad7cb92f334728782ff34c85a424
         
     }
     
