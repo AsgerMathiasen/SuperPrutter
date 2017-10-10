@@ -13,13 +13,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    // Prototype cell
-    @IBOutlet weak var cell: UITableViewCell!
-    
-    @IBOutlet weak var cellEmojiLabel: UILabel!
-    @IBOutlet weak var cellNavnLabel: UILabel!
-    @IBOutlet weak var cellLugtLabel: UILabel!
-    
     // Top labels og button
     
     @IBOutlet weak var prutNavneLabel: UILabel!

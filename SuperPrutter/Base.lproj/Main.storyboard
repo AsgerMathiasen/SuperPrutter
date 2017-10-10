@@ -117,10 +117,6 @@
                     </view>
                     <connections>
                         <outlet property="PrutEmojiLabel" destination="HFm-96-Ji1" id="1Rn-kr-5Zr"/>
-                        <outlet property="cell" destination="KuO-fs-0ds" id="cZ9-kY-k1C"/>
-                        <outlet property="cellEmojiLabel" destination="7nd-Rr-KQ2" id="bY9-dJ-baP"/>
-                        <outlet property="cellLugtLabel" destination="smA-sS-8Vu" id="bb9-QI-Kw8"/>
-                        <outlet property="cellNavnLabel" destination="kMb-vX-hOf" id="Nxn-ch-ZS2"/>
                         <outlet property="prutNavneLabel" destination="F1Q-zP-b8s" id="0dQ-Wq-dEi"/>
                         <outlet property="prutteKnap" destination="0wf-6B-jkD" id="2lq-BK-dVJ"/>
                         <outlet property="tableView" destination="O2S-ha-fpI" id="MGi-Nz-xr3"/>
