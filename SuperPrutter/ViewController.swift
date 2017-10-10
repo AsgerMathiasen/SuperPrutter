@@ -19,8 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var PrutEmojiLabel: UILabel!
     @IBOutlet weak var prutteKnap: UIButton!
     
-    
-    
     let prutter = [fart1,fart2]
     var selectedFart: Fart = fart1
     
@@ -33,7 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
     
@@ -51,6 +50,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell")
+        
+        return cell!
     }
     
     
