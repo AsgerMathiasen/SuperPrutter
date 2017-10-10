@@ -10,9 +10,25 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
-    let prutter = [fart1,fart2]
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    // Prototype cell
+    @IBOutlet weak var cell: UITableViewCell!
+    
+    @IBOutlet weak var cellEmojiLabel: UILabel!
+    @IBOutlet weak var cellNavnLabel: UILabel!
+    @IBOutlet weak var cellLugtLabel: UILabel!
+    
+    // Top labels og button
+    
+    @IBOutlet weak var prutNavneLabel: UILabel!
+    @IBOutlet weak var PrutEmojiLabel: UILabel!
+    @IBOutlet weak var prutteKnap: UIButton!
+    
+    
+    
+    let prutter = [fart1,fart2]
     var selectedFart: Fart = fart1
     
 

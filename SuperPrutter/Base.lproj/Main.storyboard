@@ -80,7 +80,7 @@
                                 </constraints>
                                 <state key="normal" image="Oval"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Q-zP-b8s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prut navn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Q-zP-b8s">
                                 <rect key="frame" x="20" y="50" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oBX-S4-hMP"/>
@@ -115,6 +115,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="PrutEmojiLabel" destination="HFm-96-Ji1" id="1Rn-kr-5Zr"/>
+                        <outlet property="cell" destination="KuO-fs-0ds" id="cZ9-kY-k1C"/>
+                        <outlet property="cellEmojiLabel" destination="7nd-Rr-KQ2" id="bY9-dJ-baP"/>
+                        <outlet property="cellLugtLabel" destination="smA-sS-8Vu" id="bb9-QI-Kw8"/>
+                        <outlet property="cellNavnLabel" destination="kMb-vX-hOf" id="Nxn-ch-ZS2"/>
+                        <outlet property="prutNavneLabel" destination="F1Q-zP-b8s" id="0dQ-Wq-dEi"/>
+                        <outlet property="prutteKnap" destination="0wf-6B-jkD" id="2lq-BK-dVJ"/>
+                        <outlet property="tableView" destination="O2S-ha-fpI" id="MGi-Nz-xr3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
