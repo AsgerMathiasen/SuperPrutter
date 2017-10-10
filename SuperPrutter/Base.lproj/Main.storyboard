@@ -79,6 +79,9 @@
                                     <constraint firstAttribute="width" constant="100" id="uvk-iJ-Hqo"/>
                                 </constraints>
                                 <state key="normal" image="Oval"/>
+                                <connections>
+                                    <action selector="prutteKnapTrykket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUK-et-czZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prut navn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Q-zP-b8s">
                                 <rect key="frame" x="20" y="50" width="335" height="30"/>
