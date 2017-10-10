@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     
     let prutter = [fart1,fart2]
-    var selectedFart: Fart = fart1
+    var selectedFart: Fart = fart2
     
 
     
@@ -32,6 +32,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        prutNavneLabel.text = selectedFart.name
+        PrutEmojiLabel.text = selectedFart.emoji
         
         
         
