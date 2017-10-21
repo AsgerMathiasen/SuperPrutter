@@ -23,8 +23,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var prutteTableLugt: UILabel!
     @IBOutlet weak var tableEmoji: UILabel!
     
-    let prutter = [fart1,fart2,fart3,fart4,fart5]
-    var selectedFart: Fart = fart2
+    let prutter = [fart1]
+    var selectedFart: Fart = fart1
     
 
     
@@ -38,7 +38,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         prutNavneLabel.text = selectedFart.name
-        PrutEmojiLabel.text = selectedFart.emoji
         
     }
     
@@ -72,10 +71,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell") as! TableViewCell
         
-        cell.Emoji.text = currentFart.emoji
+        
         cell.navn.text = "Prut: \(currentFart.name)"
         cell.lugt.text = "Lugt: \(currentFart.smell)"
-        
+        cell.profilePic.image = currentFart.profilepic
         
         return cell
         
@@ -86,7 +85,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         selectedFart = prutter[indexPath.row]
         
         prutNavneLabel.text = selectedFart.name
-        PrutEmojiLabel.text = selectedFart.emoji
+        
         
     }
     

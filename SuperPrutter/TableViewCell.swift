@@ -9,7 +9,8 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    @IBOutlet weak var Emoji: UILabel!
+    
+    @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var navn: UILabel!
     @IBOutlet weak var lugt: UILabel!
     
