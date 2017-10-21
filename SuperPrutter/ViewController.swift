@@ -21,7 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var prutteTableNavn: UILabel!
     @IBOutlet weak var prutteTableLugt: UILabel!
-    @IBOutlet weak var tableEmoji: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     
     let prutter = [fart1]
     var selectedFart: Fart = fart1
@@ -34,10 +35,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImage.image = selectedFart.background
         
         tableView.delegate = self
         tableView.dataSource = self
-        prutNavneLabel.text = selectedFart.name
+        
         
     }
     
@@ -85,6 +87,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         selectedFart = prutter[indexPath.row]
         
         prutNavneLabel.text = selectedFart.name
+        backgroundImage.image = selectedFart.background
         
         
     }

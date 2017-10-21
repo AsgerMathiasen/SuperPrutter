@@ -20,22 +20,33 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aL-Xf-oq1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fie_Laursen" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-tQ-jsK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-6B-jkD">
+                                        <rect key="frame" x="137" y="125" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Nng-uW-olt"/>
+                                            <constraint firstAttribute="width" constant="100" id="uvk-iJ-Hqo"/>
+                                        </constraints>
+                                        <state key="normal" image="Oval"/>
+                                        <connections>
+                                            <action selector="prutteKnapTrykket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUK-et-czZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="0wf-6B-jkD" firstAttribute="centerX" secondItem="4aL-Xf-oq1" secondAttribute="centerX" id="Lxi-vB-tPY"/>
+                                    <constraint firstItem="DOi-tQ-jsK" firstAttribute="top" secondItem="4aL-Xf-oq1" secondAttribute="top" id="RFp-85-R6G"/>
+                                    <constraint firstItem="DOi-tQ-jsK" firstAttribute="leading" secondItem="4aL-Xf-oq1" secondAttribute="leading" id="TN1-s3-ftS"/>
+                                    <constraint firstAttribute="bottom" secondItem="DOi-tQ-jsK" secondAttribute="bottom" id="Ugd-EH-1Zp"/>
+                                    <constraint firstItem="0wf-6B-jkD" firstAttribute="centerY" secondItem="4aL-Xf-oq1" secondAttribute="centerY" id="YSf-b5-Vcw"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOi-tQ-jsK" secondAttribute="trailing" id="YbD-fR-T3g"/>
                                     <constraint firstAttribute="height" constant="350" id="lx0-Dh-Jw1"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-6B-jkD">
-                                <rect key="frame" x="137.5" y="210" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Nng-uW-olt"/>
-                                    <constraint firstAttribute="width" constant="100" id="uvk-iJ-Hqo"/>
-                                </constraints>
-                                <state key="normal" image="Oval"/>
-                                <connections>
-                                    <action selector="prutteKnapTrykket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUK-et-czZ"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-0D-2BG">
                                 <rect key="frame" x="0.0" y="350" width="375" height="317"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,11 +114,11 @@
                             <constraint firstItem="4aL-Xf-oq1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EP1-7o-YfJ"/>
                             <constraint firstItem="4aL-Xf-oq1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HhL-6n-aJA"/>
                             <constraint firstItem="lvD-0D-2BG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K0d-Ti-kSx"/>
-                            <constraint firstItem="0wf-6B-jkD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="caV-sE-Uvb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="DOi-tQ-jsK" id="Rbw-JX-AZT"/>
                         <outlet property="prutteKnap" destination="0wf-6B-jkD" id="2lq-BK-dVJ"/>
                         <outlet property="tableView" destination="lvD-0D-2BG" id="AgL-VB-XAt"/>
                     </connections>
@@ -118,6 +129,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fie_Laursen" width="960" height="660"/>
         <image name="Oval" width="100" height="100"/>
     </resources>
 </document>
