@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,22 +15,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperPrutter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aL-Xf-oq1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="700"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fie_Laursen" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-tQ-jsK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="700"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-6B-jkD">
-                                        <rect key="frame" x="137" y="125" width="100" height="100"/>
+                                        <rect key="frame" x="333.5" y="580" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Nng-uW-olt"/>
                                             <constraint firstAttribute="width" constant="100" id="uvk-iJ-Hqo"/>
                                         </constraints>
-                                        <state key="normal" image="Oval"/>
+                                        <state key="normal" image="Play"/>
                                         <connections>
                                             <action selector="prutteKnapTrykket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUK-et-czZ"/>
                                         </connections>
@@ -42,33 +42,35 @@
                                     <constraint firstItem="DOi-tQ-jsK" firstAttribute="top" secondItem="4aL-Xf-oq1" secondAttribute="top" id="RFp-85-R6G"/>
                                     <constraint firstItem="DOi-tQ-jsK" firstAttribute="leading" secondItem="4aL-Xf-oq1" secondAttribute="leading" id="TN1-s3-ftS"/>
                                     <constraint firstAttribute="bottom" secondItem="DOi-tQ-jsK" secondAttribute="bottom" id="Ugd-EH-1Zp"/>
-                                    <constraint firstItem="0wf-6B-jkD" firstAttribute="centerY" secondItem="4aL-Xf-oq1" secondAttribute="centerY" id="YSf-b5-Vcw"/>
                                     <constraint firstAttribute="trailing" secondItem="DOi-tQ-jsK" secondAttribute="trailing" id="YbD-fR-T3g"/>
-                                    <constraint firstAttribute="height" constant="350" id="lx0-Dh-Jw1"/>
+                                    <constraint firstAttribute="height" constant="350" id="lx0-Dh-Jw1">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="700"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="0wf-6B-jkD" secondAttribute="bottom" constant="20" id="ypZ-QY-Hcu"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-0D-2BG">
-                                <rect key="frame" x="0.0" y="350" width="375" height="317"/>
+                                <rect key="frame" x="0.0" y="700" width="768" height="324"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prutteCell" id="B9V-Ct-IKg" customClass="TableViewCell" customModule="SuperPrutter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B9V-Ct-IKg" id="L3J-8z-H3Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B9V-Ct-IKg" id="L3J-8z-H3Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xFs-X0-IfN">
-                                                    <rect key="frame" x="78" y="14.5" width="269" height="50"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xFs-X0-IfN">
+                                                    <rect key="frame" x="85" y="14.5" width="648" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prut: Ko-prut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUh-9C-8Ty">
-                                                            <rect key="frame" x="0.0" y="0.0" width="269" height="29.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="648" height="29.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lugt: Gammel Gras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWe-Gx-isy">
-                                                            <rect key="frame" x="0.0" y="29.5" width="269" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="29.5" width="648" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -79,7 +81,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-gu-S54">
-                                                    <rect key="frame" x="18" y="-25.5" width="50" height="50.5"/>
+                                                    <rect key="frame" x="25" y="-3.5" width="50" height="50.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="dtm-T9-rvw"/>
                                                         <constraint firstAttribute="height" constant="50" id="z87-wO-Wlb"/>
@@ -95,7 +97,7 @@
                                                 <constraint firstItem="xFs-X0-IfN" firstAttribute="top" secondItem="L3J-8z-H3Z" secondAttribute="top" constant="15" id="t7v-7a-OLL"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.58193960959999991" green="0.4050186506857143" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="lugt" destination="xWe-Gx-isy" id="VPN-xG-w00"/>
                                             <outlet property="navn" destination="OUh-9C-8Ty" id="40o-dE-usc"/>
@@ -130,6 +132,6 @@
     </scenes>
     <resources>
         <image name="Fie_Laursen" width="960" height="660"/>
-        <image name="Oval" width="100" height="100"/>
+        <image name="Play" width="80" height="80"/>
     </resources>
 </document>

@@ -24,8 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var backgroundImage: UIImageView!
     
     
-    let prutter = [fart1]
-    var selectedFart: Fart = fart1
+    let prutter = [fieLaursen, alex, julia, rasmus, astrid, albert, ida, boris, louise, lakserytteren, emilie]
+    var selectedFart: Fart = fieLaursen
     
 
     
@@ -74,10 +74,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "prutteCell") as! TableViewCell
         
         
-        cell.navn.text = "Prut: \(currentFart.name)"
+        cell.navn.text = "\(currentFart.name)"
         cell.lugt.text = "Lugt: \(currentFart.smell)"
         cell.profilePic.image = currentFart.profilepic
-        
+        cell.profilePic.layer.masksToBounds = true
+        cell.profilePic.layer.cornerRadius = cell.profilePic.frame.height / 2.0
         return cell
         
     }
@@ -86,7 +87,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         selectedFart = prutter[indexPath.row]
         
-        prutNavneLabel.text = selectedFart.name
+        
         backgroundImage.image = selectedFart.background
         
         

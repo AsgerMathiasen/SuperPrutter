@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2730BA5A1F8FD77F00C47D2A /* fart3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA571F8FD5F200C47D2A /* fart3.wav */; };
-		2730BA5B1F8FD77F00C47D2A /* fart4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA581F8FD5F800C47D2A /* fart4.wav */; };
-		2730BA5C1F8FD77F00C47D2A /* fart5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA591F8FD6C800C47D2A /* fart5.wav */; };
+		2730BA5A1F8FD77F00C47D2A /* AstridOlsen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA571F8FD5F200C47D2A /* AstridOlsen.wav */; };
+		2730BA5B1F8FD77F00C47D2A /* Fielaursen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA581F8FD5F800C47D2A /* Fielaursen.wav */; };
+		2730BA5C1F8FD77F00C47D2A /* emilieBriting.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2730BA591F8FD6C800C47D2A /* emilieBriting.wav */; };
+		277F9DCF1FBF4DBB000BB984 /* AlbertDyrlund.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DC71FBF4DBA000BB984 /* AlbertDyrlund.wav */; };
+		277F9DD01FBF4DBB000BB984 /* AlexanderHusum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DC81FBF4DBA000BB984 /* AlexanderHusum.wav */; };
+		277F9DD11FBF4DBB000BB984 /* Rasmusbrohave.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DC91FBF4DBA000BB984 /* Rasmusbrohave.wav */; };
+		277F9DDA1FBF4E6A000BB984 /* LouiseMadsen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DD91FBF4E6A000BB984 /* LouiseMadsen.wav */; };
+		277F9DDE1FBF5D46000BB984 /* BorisLaursen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DDD1FBF5D46000BB984 /* BorisLaursen.wav */; };
+		277F9DE01FBF5D84000BB984 /* IdaImilia.wav in Resources */ = {isa = PBXBuildFile; fileRef = 277F9DDF1FBF5D84000BB984 /* IdaImilia.wav */; };
 		27A5ECAE1F8D55C900B2CE5C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A5ECAD1F8D55C900B2CE5C /* TableViewCell.swift */; };
 		27C6A5451F8A9ABD00F5945A /* PrutLyde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6A5441F8A9ABD00F5945A /* PrutLyde.swift */; };
-		27C6A5481F8A9D0000F5945A /* fart2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C6A5471F8A9CF400F5945A /* fart2.wav */; };
+		27C6A5481F8A9D0000F5945A /* Lakserytteren.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27C6A5471F8A9CF400F5945A /* Lakserytteren.wav */; };
 		9CD5DFE61F8A6A98009D30C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */; };
 		9CD5DFE81F8A6A98009D30C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */; };
 		9CD5DFEB1F8A6A98009D30C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5DFE91F8A6A98009D30C0 /* Main.storyboard */; };
@@ -20,7 +26,7 @@
 		9CD5DFF01F8A6A98009D30C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5DFEE1F8A6A98009D30C0 /* LaunchScreen.storyboard */; };
 		9CD5DFFB1F8A6A99009D30C0 /* SuperPrutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5DFFA1F8A6A99009D30C0 /* SuperPrutterTests.swift */; };
 		9CD5E0061F8A6A99009D30C0 /* SuperPrutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5E0051F8A6A99009D30C0 /* SuperPrutterUITests.swift */; };
-		9CFA948D1F8A854C00E33310 /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA948C1F8A854800E33310 /* fart.wav */; };
+		9CFA948D1F8A854C00E33310 /* JuliaSofia.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA948C1F8A854800E33310 /* JuliaSofia.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2730BA571F8FD5F200C47D2A /* fart3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart3.wav; sourceTree = "<group>"; };
-		2730BA581F8FD5F800C47D2A /* fart4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart4.wav; sourceTree = "<group>"; };
-		2730BA591F8FD6C800C47D2A /* fart5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart5.wav; sourceTree = "<group>"; };
+		2730BA571F8FD5F200C47D2A /* AstridOlsen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AstridOlsen.wav; sourceTree = "<group>"; };
+		2730BA581F8FD5F800C47D2A /* Fielaursen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fielaursen.wav; sourceTree = "<group>"; };
+		2730BA591F8FD6C800C47D2A /* emilieBriting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = emilieBriting.wav; sourceTree = "<group>"; };
+		277F9DC71FBF4DBA000BB984 /* AlbertDyrlund.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AlbertDyrlund.wav; sourceTree = "<group>"; };
+		277F9DC81FBF4DBA000BB984 /* AlexanderHusum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AlexanderHusum.wav; sourceTree = "<group>"; };
+		277F9DC91FBF4DBA000BB984 /* Rasmusbrohave.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Rasmusbrohave.wav; sourceTree = "<group>"; };
+		277F9DD91FBF4E6A000BB984 /* LouiseMadsen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LouiseMadsen.wav; sourceTree = "<group>"; };
+		277F9DDD1FBF5D46000BB984 /* BorisLaursen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = BorisLaursen.wav; path = "../../../../../Desktop/67 prutter/BorisLaursen.wav"; sourceTree = "<group>"; };
+		277F9DDF1FBF5D84000BB984 /* IdaImilia.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = IdaImilia.wav; path = "../../../../../Desktop/67 prutter/IdaImilia.wav"; sourceTree = "<group>"; };
 		27A5ECAD1F8D55C900B2CE5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		27C6A5441F8A9ABD00F5945A /* PrutLyde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrutLyde.swift; sourceTree = "<group>"; };
-		27C6A5471F8A9CF400F5945A /* fart2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart2.wav; sourceTree = "<group>"; };
+		27C6A5471F8A9CF400F5945A /* Lakserytteren.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Lakserytteren.wav; sourceTree = "<group>"; };
 		9CD5DFE21F8A6A98009D30C0 /* SuperPrutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPrutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD5DFE51F8A6A98009D30C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CD5DFE71F8A6A98009D30C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +72,7 @@
 		9CD5E0011F8A6A99009D30C0 /* SuperPrutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPrutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD5E0051F8A6A99009D30C0 /* SuperPrutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPrutterUITests.swift; sourceTree = "<group>"; };
 		9CD5E0071F8A6A99009D30C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CFA948C1F8A854800E33310 /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
+		9CFA948C1F8A854800E33310 /* JuliaSofia.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = JuliaSofia.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +103,17 @@
 		27C6A5461F8A9CC500F5945A /* Prutterne */ = {
 			isa = PBXGroup;
 			children = (
-				9CFA948C1F8A854800E33310 /* fart.wav */,
-				27C6A5471F8A9CF400F5945A /* fart2.wav */,
-				2730BA571F8FD5F200C47D2A /* fart3.wav */,
-				2730BA581F8FD5F800C47D2A /* fart4.wav */,
-				2730BA591F8FD6C800C47D2A /* fart5.wav */,
+				9CFA948C1F8A854800E33310 /* JuliaSofia.wav */,
+				27C6A5471F8A9CF400F5945A /* Lakserytteren.wav */,
+				2730BA571F8FD5F200C47D2A /* AstridOlsen.wav */,
+				2730BA581F8FD5F800C47D2A /* Fielaursen.wav */,
+				277F9DDD1FBF5D46000BB984 /* BorisLaursen.wav */,
+				2730BA591F8FD6C800C47D2A /* emilieBriting.wav */,
+				277F9DC81FBF4DBA000BB984 /* AlexanderHusum.wav */,
+				277F9DC91FBF4DBA000BB984 /* Rasmusbrohave.wav */,
+				277F9DDF1FBF5D84000BB984 /* IdaImilia.wav */,
+				277F9DC71FBF4DBA000BB984 /* AlbertDyrlund.wav */,
+				277F9DD91FBF4E6A000BB984 /* LouiseMadsen.wav */,
 			);
 			path = Prutterne;
 			sourceTree = "<group>";
@@ -261,14 +279,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2730BA5A1F8FD77F00C47D2A /* fart3.wav in Resources */,
-				2730BA5B1F8FD77F00C47D2A /* fart4.wav in Resources */,
-				2730BA5C1F8FD77F00C47D2A /* fart5.wav in Resources */,
-				27C6A5481F8A9D0000F5945A /* fart2.wav in Resources */,
-				9CFA948D1F8A854C00E33310 /* fart.wav in Resources */,
+				277F9DDA1FBF4E6A000BB984 /* LouiseMadsen.wav in Resources */,
+				2730BA5A1F8FD77F00C47D2A /* AstridOlsen.wav in Resources */,
+				2730BA5B1F8FD77F00C47D2A /* Fielaursen.wav in Resources */,
+				277F9DDE1FBF5D46000BB984 /* BorisLaursen.wav in Resources */,
+				2730BA5C1F8FD77F00C47D2A /* emilieBriting.wav in Resources */,
+				27C6A5481F8A9D0000F5945A /* Lakserytteren.wav in Resources */,
+				9CFA948D1F8A854C00E33310 /* JuliaSofia.wav in Resources */,
 				9CD5DFF01F8A6A98009D30C0 /* LaunchScreen.storyboard in Resources */,
+				277F9DCF1FBF4DBB000BB984 /* AlbertDyrlund.wav in Resources */,
 				9CD5DFED1F8A6A98009D30C0 /* Assets.xcassets in Resources */,
 				9CD5DFEB1F8A6A98009D30C0 /* Main.storyboard in Resources */,
+				277F9DD01FBF4DBB000BB984 /* AlexanderHusum.wav in Resources */,
+				277F9DE01FBF5D84000BB984 /* IdaImilia.wav in Resources */,
+				277F9DD11FBF4DBB000BB984 /* Rasmusbrohave.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
